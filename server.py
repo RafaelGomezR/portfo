@@ -33,7 +33,7 @@ def login():
             write_to_csv(data)
             return redirect('/thankyou.html')
         except:
-            print('Could not write to the database')
+            return'Could not write to the database'
     else:
         return 'Something went wrong!!'
 
